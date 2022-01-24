@@ -1,6 +1,6 @@
 from troposphere import Parameter, Ref, Template
 from troposphere.ecs import (
-    AwsvpcConfiguration,
+    AwsVpcConfiguration,
     Cluster,
     ContainerDefinition,
     NetworkConfiguration,
@@ -47,7 +47,7 @@ service = t.add_resource(
         TaskDefinition=Ref(task_definition),
         LaunchType="FARGATE",
         NetworkConfiguration=NetworkConfiguration(
-            AwsvpcConfiguration=AwsvpcConfiguration(Subnets=[Ref("Subnet")])
+            AwsVpcConfiguration=AwsVpcConfiguration(Subnets=[Ref("Subnet")])
         ),
     )
 )

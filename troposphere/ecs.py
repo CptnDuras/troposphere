@@ -232,9 +232,9 @@ class LoadBalancer(AWSProperty):
     }
 
 
-class AwsvpcConfiguration(AWSProperty):
+class AwsVpcConfiguration(AWSProperty):
     """
-    `AwsvpcConfiguration <http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-awsvpcconfiguration.html>`__
+    `AwsVpcConfiguration <http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-awsvpcconfiguration.html>`__
     """
 
     props: PropsDictType = {
@@ -250,7 +250,7 @@ class NetworkConfiguration(AWSProperty):
     """
 
     props: PropsDictType = {
-        "AwsvpcConfiguration": (AwsvpcConfiguration, False),
+        "AwsVpcConfiguration": (AwsVpcConfiguration, False),
     }
 
 

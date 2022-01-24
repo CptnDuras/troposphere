@@ -53,7 +53,7 @@ patches = [
         "path": "/ResourceTypes/AWS::ECS::TaskDefinition/Properties/PlacementConstraints/ItemType",
         "value": "PlacementConstraint",
     },
-    # backward compatibility - prefer AWS::ECS::Service.NetworkConfiguration "AwsvpcConfiguration" over AWS::ECS::TaskSet.NetworkConfiguration "AwsVpcConfiguration"
+    # backward compatibility - prefer AWS::ECS::Service.NetworkConfiguration "AwsVpcConfiguration" over AWS::ECS::TaskSet.NetworkConfiguration "AwsVpcConfiguration"
     {
         "op": "remove",
         "path": "/PropertyTypes/AWS::ECS::TaskSet.NetworkConfiguration",
@@ -67,13 +67,13 @@ patches = [
     {
         "op": "move",
         "from": "/PropertyTypes/AWS::ECS::Service.AwsVpcConfiguration",
-        "path": "/PropertyTypes/AWS::ECS::Service.AwsvpcConfiguration",
+        "path": "/PropertyTypes/AWS::ECS::Service.AwsVpcConfiguration",
     },
     # backward compatibility
     {
         "op": "replace",
-        "path": "/PropertyTypes/AWS::ECS::Service.NetworkConfiguration/Properties/AwsvpcConfiguration/Type",
-        "value": "AwsvpcConfiguration",
+        "path": "/PropertyTypes/AWS::ECS::Service.NetworkConfiguration/Properties/AwsVpcConfiguration/Type",
+        "value": "AwsVpcConfiguration",
     },
     # backward compatibility
     {
