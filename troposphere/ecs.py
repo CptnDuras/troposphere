@@ -234,7 +234,7 @@ class LoadBalancer(AWSProperty):
 
 class AwsVpcConfiguration(AWSProperty):
     """
-    `AwsVpcConfiguration <http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-awsvpcconfiguration.html>`__
+    `AwsvpcConfiguration <http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-awsvpcconfiguration.html>`__
     """
 
     props: PropsDictType = {

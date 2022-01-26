@@ -3,7 +3,7 @@
 #
 # See LICENSE file for full license.
 
-from . import AWSObject, AWSProperty, Tags
+from . import AWSObject, AWSProperty, Tags, PropsDictType
 from .validators import boolean, integer, network_port, positive_integer
 
 VALID_RULETYPES = ("SYSTEM", "FORWARD")
@@ -65,7 +65,7 @@ class GeoLocation(AWSProperty):
 
 
 class BaseRecordSet:
-    props = {
+    props: PropsDictType = {
         "AliasTarget": (AliasTarget, False),
         "Comment": (str, False),
         "Failover": (str, False),
